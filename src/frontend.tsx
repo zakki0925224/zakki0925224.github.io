@@ -1,16 +1,19 @@
-/**
- * This file is the entry point for the React app, it sets up the root
- * element and renders the App component to the DOM.
- *
- * It is included in `src/index.html`.
- */
-
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
+import React from "react";
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
+import theme from "./theme";
 
 function start() {
     const root = createRoot(document.getElementById("root")!);
-    root.render(<App />);
+    root.render(
+        <React.StrictMode>
+            <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+            <ChakraProvider theme={theme}>
+                <App />
+            </ChakraProvider>
+        </React.StrictMode>
+    );
 }
 
 if (document.readyState === "loading") {

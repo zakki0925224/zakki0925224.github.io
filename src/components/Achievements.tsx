@@ -5,6 +5,7 @@ interface Achievement {
     title: string;
     url: string;
     year: number;
+    description?: string;
 }
 
 interface AchievementsProps {
@@ -53,6 +54,11 @@ function AchievementCard({ item }: Readonly<{ item: Achievement }>) {
                     </Text>
                 </HStack>
                 <Heading size="sm" pr={6}>{item.title}</Heading>
+                {item.description && (
+                    <Text mt={2} fontSize="sm" color="gray.500" noOfLines={2}>
+                        {item.description}
+                    </Text>
+                )}
                 <Icon as={FiExternalLink} position="absolute" top={4} right={4} color="gray.400" />
             </CardBody>
         </Card>

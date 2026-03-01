@@ -24,7 +24,6 @@ const links = [
     { title: "X (旧Twitter)", url: "https://x.com/zakki0925224", icon: FaXTwitter },
     { title: "mixi2", url: "https://mixi.social/@zakki0925224", icon: FaGlobe },
     { title: "Misskey.io", url: "https://misskey.io/@zakki0925224", icon: SiMisskey },
-    { title: "Instagram", url: "https://www.instagram.com/zakki0925224_", icon: FaInstagram },
     { title: "pixiv", url: "https://www.pixiv.net/users/122707497", icon: FaPixiv },
     { title: "zebian.log (hatenablog)", url: "https://zebian.hatenablog.com", icon: FaPenNib },
 ];

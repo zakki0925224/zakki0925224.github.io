@@ -4,7 +4,7 @@ import {
     Container,
     useColorModeValue,
 } from "@chakra-ui/react";
-import { FaGithub, FaGlobe, FaInstagram, FaPenNib } from "react-icons/fa";
+import { FaGithub, FaGlobe, FaPenNib } from "react-icons/fa";
 import { FaPixiv, FaXTwitter } from "react-icons/fa6";
 import { Profile } from "./components/Profile";
 import { SocialLinks } from "./components/SocialLinks";

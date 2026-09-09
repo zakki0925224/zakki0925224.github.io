@@ -11,7 +11,7 @@ import { SocialLinks } from "./components/SocialLinks";
 import { Achievements } from "./components/Achievements";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { Footer } from "./components/Footer";
-import { SiMisskey } from "react-icons/si";
+import { SiMisskey, SiScrapbox } from "react-icons/si";
 
 const me = {
     name: "Zakki",
@@ -26,6 +26,7 @@ const links = [
     { title: "Misskey.io", url: "https://misskey.io/@zakki0925224", icon: SiMisskey },
     { title: "pixiv", url: "https://www.pixiv.net/users/122707497", icon: FaPixiv },
     { title: "zebian.log (hatenablog)", url: "https://zebian.hatenablog.com", icon: FaPenNib },
+    { title: "Cosense（旧Scrapbox）", url: "https://scrapbox.io/zakki0925224/", icon: SiScrapbox },
 ];
 
 const achievements = [
